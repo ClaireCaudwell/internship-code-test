@@ -4,6 +4,52 @@ Pick any css battle where the solution requires at least three html elements (or
 
 Submit the resulting css together with a link to the battle you chose.
 
-Link to css: (TODO: replace this text with the link)
+Link to css: https://cssbattle.dev/play/46
 
+<body>
+  <div class="circle-one">
+  	<div class="first-peak"></div>
+  	<div class="second-peak"></div>
+  </div>
+</body>
+
+<style>
+  body {
+  	background-color: #293462;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle-one {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #FFF1C1;
+    z-index: 0;
+    clip-path: circle(50%);
+  }
+  
+  .first-peak {
+    position: absolute;
+    background-color: #FE5F55;
+    width: 151px;
+    height: 200px;
+    top: 133px;
+    left: 150px;
+    z-index: 2;
+    transform: rotate(45deg);
+  }
+  
+  .second-peak {
+   	position: absolute;
+    background-color: #FE5F55;
+    height: 68px;
+    width: 110px;
+    top: 208px;
+    left: 90px;
+    transform: rotate(45deg);
+    z-index: 0;
+  }
+</style>
 */
